@@ -1,14 +1,13 @@
-{-# LANGUAGE OverloadedStrings  #-}
-
 module MainSpec (main, spec) where
-import           Test.Hspec
 
+import  Test.Hspec
+import  Main (func)
 
 main :: IO ()
 main = hspec spec
 
 spec :: Spec
 spec =
-  describe "Main" $ do 
-      it " example test " $
-        1 `shouldBe` 1
+  describe "Example" $ do 
+      it " func  " $
+       func 1 `shouldBe` 1
